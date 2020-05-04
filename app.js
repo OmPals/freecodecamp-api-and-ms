@@ -14,7 +14,7 @@ const next = (err) => {console.log(err)}
 
 var req_no = 0
 
-var mongodb = 'mongodb+srv://om:OmPals%40241099@mycluster0-ek1mi.mongodb.net/url-shortner?retryWrites=true&w=majority'
+var mongodb = 'http://localhost:27017/url-shortner'
 mongoose.connect(mongodb, {useNewUrlParser: true, useUnifiedTopology: true })
 mongoose.Promise = global.Promise;
 var db = mongoose.connection
